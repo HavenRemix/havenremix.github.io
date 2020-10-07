@@ -1,0 +1,154 @@
+﻿body, html {
+    background-color: white;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+/*NavBar*/
+#NavBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+li {
+    float: left;
+}
+
+
+li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+            background-color: #111;
+        }
+
+
+/*Images*/
+
+
+.Para_Image, .Image2, .Image3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+    fixed = parallax
+    scroll = normal
+  */
+    background-attachment: fixed;
+}
+
+
+.StudioHomePage_Image {
+    background-image: url('../img/StudioHomePage_Image.jpg');
+    min-height: 100%;
+}
+
+
+.Image2 {
+    background-image: url('../img/image2.jpg');
+    min-height: 400px;
+}
+
+
+.Image3 {
+    background-image: url('../img/image3.jpg');
+    min-height: 400px;
+}
+
+
+/*Sections*/
+
+
+.Section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+
+.Section-Light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+
+.Section-Dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+
+/*Text*/
+
+
+.ImageText {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+
+.ImageText .Border {
+        background-color: #111;
+        color: #fff;
+        padding: 20px;
+    }
+
+
+.ImageText .Border.Trans {
+            background-color: transparent;
+        }
+
+
+/*If on a small screen the scrool normally dont use parallex becaus eit can cause issues*/
+@media(max-width:568px) {
+    .pimg1, .pimg2, .pimg3 {
+        background-attachment: scroll;
+    }
+}
+
+
+/* Redirect Buttons*/
+
+.RedirectButton {
+    background-color: #111;
+    color: #fff;
+    padding: 25px;
+    border: 0px;
+}
+
+.RedirectButton:hover {
+        background-color: #000;
+    }
+
+/* Copyright */
+.Section-Dark-copyright {
+    height: 0px;
+    background-color: #282e34;
+}
+
+
+#Copyright {
+    text-align: left;
+}
